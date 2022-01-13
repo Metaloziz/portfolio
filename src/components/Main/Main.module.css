@@ -1,0 +1,16 @@
+.mainFirst {
+    background-color: rgb(25, 159, 159);
+    height: 100vh;
+}
+
+
+.text {
+    width: 50vh;
+    background-color: #9a8f17;
+}
+
+.photo {
+    width: 50vh;
+    height: 50vh;
+    background-color: #529147;
+}

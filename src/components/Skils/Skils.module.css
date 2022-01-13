@@ -1,0 +1,31 @@
+.mainFirst {
+    background-color: rgba(35, 72, 5, 0.42);
+    height: 100vh;
+}
+
+.skillsBlock {
+    background-color: #00ffc0;
+    height: auto;
+    width: 100%;
+}
+
+.container {
+    align-items: flex-start;
+}
+
+.title {
+    background-color: dimgrey;
+}
+
+.skills {
+    border: 1px solid;
+    background-color: rgba(52, 46, 46, 0.46);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    /*text-align: center;*/
+}
+
