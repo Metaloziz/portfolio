@@ -1,10 +1,8 @@
-.mainFirst {
-    background-color: rgba(35, 72, 5, 0.42);
-    height: 100vh;
-}
 
 .skillsBlock {
+    border-radius: 20px;
     background-color: #00ffc0;
+    min-height: 100vh;
     height: auto;
     width: 100%;
 }
@@ -15,6 +13,7 @@
 
 .title {
     background-color: dimgrey;
+    text-align: center;
 }
 
 .skills {

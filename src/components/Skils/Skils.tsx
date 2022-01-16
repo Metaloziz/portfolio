@@ -5,21 +5,20 @@ import {Skill} from "./Skill/Skill";
 
 
 export const Skills = () => {
-    return <div className={s.mainFirst}>
-        <div className={`${commonStyle.container} ${s.container}`}>
-            <div className={s.skillsBlock}>
+    return<div className={`${commonStyle.container} ${s.container}`}>
+        <div className={`${s.skillsBlock} `}>
 
-                <h2 className={s.title}> Block2 title</h2>
-                <div className={s.skills}>
-                    <Skill/>
-                    <Skill/>
-                    <Skill/>
-                    <Skill/>
-                    <Skill/>
-                    <Skill/>
-                </div>
-
+            <h2 className={s.title}> Block2 title</h2>
+            <div className={s.skills}>
+                <Skill/>
+                <Skill/>
+                <Skill/>
+                <Skill/>
+                <Skill/>
+                <Skill/>
             </div>
+
+
         </div>
     </div>
 }

@@ -1,6 +1,7 @@
 .item {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid;
+    border-radius: 30px;
     min-height: 30vh;
     /*height: 30vh;*/
     width: 30vh;
@@ -17,8 +18,8 @@
     width: 10vh;
     display: flex;
     /*text-align: center;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
