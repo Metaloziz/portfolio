@@ -1,0 +1,31 @@
+.mainBlock {
+    background-color: rgba(17, 203, 176, 0.78);
+    height: 100vh;
+    /*border-radius: 20px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid;
+    border-radius: 20px;
+    height: 50vh;
+    width: 90vh;
+}
+
+.mainBlock form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainBlock button {
+    border-radius: 10px;
+    width: 25%;
+    height: 10%;
+}
