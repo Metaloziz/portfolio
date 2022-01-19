@@ -25,7 +25,8 @@
 
 .pictures {
     border: 1px solid;
-    height: 80%;
+    min-height: 80%;
+    /*height: 80%;*/
     width: 90%;
     border-radius: 10px;
     display: flex;

@@ -1,6 +1,7 @@
 .mainFirst {
-    background-color: rgb(25, 159, 159);
+    /*background-color: rgb(25, 159, 159);*/
     height: 100vh;
+    align-items: center;
 }
 
 
