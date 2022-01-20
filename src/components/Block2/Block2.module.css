@@ -1,0 +1,29 @@
+
+.generalBlock {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    align-items: center;
+}
+
+.title {
+    background-color: #50B5AE;
+    text-align: center;
+    min-width: 200px;
+    width: 30%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    column-gap: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    border: 1px solid;
+    height: auto;
+    border-radius: 10px;
+    width: 100%;
+}
+
+

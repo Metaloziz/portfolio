@@ -1,0 +1,27 @@
+.generalBlock {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    align-items: center;
+}
+
+.text {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50vh;
+    background-color: #A5E6E1;
+    border-radius: 10px;
+}
+
+.photo {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 50vh;
+    height: 50vh;
+    background-color: #A5E6E1;
+}

@@ -1,18 +1,23 @@
-.mainBlock {
-    background-color: rgba(85, 203, 17, 0.32);
+.generalBlock {
+    background-color: rgba(0, 0, 0, 0.6);
     min-height: 30vh;
-    /*border-radius: 20px;*/
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
-.centralBlock {
+.cubesBlock {
     padding: 1vh;
     display: flex;
-    /*flex-direction: column;*/
+    background-color: #A5E6E1;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -27,6 +32,6 @@
 .cube {
     width: 80px;
     height: 80px;
-    background-color: #00ffc0;
+    background-color: #50b5ae;
     border-radius: 10px;
 }

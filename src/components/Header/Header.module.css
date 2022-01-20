@@ -1,9 +1,9 @@
-.header {
+.generalBlock {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     align-content: space-between;
     height: 100px;
-    background-color: #3cffe4;
+    background-color: #50B5AE;
     gap: 20%;
 }

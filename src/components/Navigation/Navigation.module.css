@@ -2,9 +2,16 @@
 .navigation {
     border: 1px solid;
     display: flex;
-    width: 405px;
+    min-width: 250px;
+    height: 5vh;
+    border-radius: 10px;
+    width: 80vh;
     gap: 15px;
-    /* flex-direction: unset; */
-    justify-content: space-evenly;
+    justify-content: space-around;
+    font-weight: 500;
     align-items: center
+}
+
+.navigation a {
+    color: #ffffff;
 }

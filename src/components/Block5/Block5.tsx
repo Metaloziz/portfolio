@@ -4,16 +4,19 @@ import s from './Block5.module.css'
 
 export const Block5 = () => {
     return (
-        <div className={`${commonStyle.container} ${s.mainBlock}`}>
 
-            <h3>Андрей</h3>
-            <div className={s.centralBlock}>
-                <div className={s.cube}/>
-                <div className={s.cube}/>
-                <div className={s.cube}/>
-                <div className={s.cube}/>
+        <div className={s.generalBlock}>
+            <div className={`${commonStyle.container} ${s.container}`}>
+
+                <h3>Block 5</h3>
+                <div className={s.cubesBlock}>
+                    <div className={s.cube}/>
+                    <div className={s.cube}/>
+                    <div className={s.cube}/>
+                    <div className={s.cube}/>
+                </div>
+                <span>2022. Все права защищены</span>
             </div>
-            <span>2022 се права защищены</span>
         </div>
     );
 };
