@@ -25,3 +25,9 @@
     height: 50vh;
     background-color: #A5E6E1;
 }
+
+@media screen and (max-width: 1000px) {
+    .text {
+        background-color: red;
+    }
+}
