@@ -1,22 +1,21 @@
-import React from "react";
 import commonStyle from "../../common/styles/Container.module.css";
-import s from './Block5.module.css'
+import style from './Block5.module.css'
 
 export const Block5 = () => {
-    return (
+  return (
 
-        <div className={s.generalBlock}>
-            <div className={`${commonStyle.container} ${s.container}`}>
+    <div className={style.generalBlock}>
+      <div className={`${commonStyle.container} ${style.container}`}>
 
-                <h3>Block 5</h3>
-                <div className={s.cubesBlock}>
-                    <div className={s.cube}/>
-                    <div className={s.cube}/>
-                    <div className={s.cube}/>
-                    <div className={s.cube}/>
-                </div>
-                <span>2022. Все права защищены</span>
-            </div>
+        <h3>Block 5</h3>
+        <div className={style.cubesBlock}>
+          <div className={style.cube}/>
+          <div className={style.cube}/>
+          <div className={style.cube}/>
+          <div className={style.cube}/>
         </div>
-    );
+        <span>2022. Все права защищены</span>
+      </div>
+    </div>
+  );
 };

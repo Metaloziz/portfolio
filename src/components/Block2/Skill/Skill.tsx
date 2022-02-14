@@ -1,13 +1,12 @@
-import React from "react";
-import s from './Skill.module.css'
+import style from './Skill.module.css'
 
 export const Skill = () => {
-    return (
-        <div className={s.item}>
-            <div className={s.icon}>icon</div>
-            <h3>title</h3>
-            <span
-                className={s.text}>test test test test test test test test test test test test test test test test test test test test test test  test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </span>
-        </div>
-    );
+  return (
+    <div className={style.item}>
+      <div className={style.icon}>icon</div>
+      <h3>title</h3>
+      <span
+        className={style.text}>test test test test test test test test test test test test test test test test test test test test test test  test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </span>
+    </div>
+  );
 };

@@ -3,7 +3,7 @@ import {Navigation} from "../Navigation/Navigation";
 
 
 export const Header = () => {
-    return <div className={s.generalBlock}>
-        <Navigation/>
-    </div>
+  return <div className={s.generalBlock}>
+    <Navigation/>
+  </div>
 }
