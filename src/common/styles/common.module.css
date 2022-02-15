@@ -16,6 +16,13 @@
     align-items: center;
     height: 100vh;
 }
+.title {
+    background-color: #50B5AE;
+    text-align: center;
+    min-width: 200px;
+    width: 30%;
+}
+
 
 
 /*width: 80%;*/

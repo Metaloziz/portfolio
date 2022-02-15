@@ -5,12 +5,12 @@
     height: auto;
 }
 
-.title {
-    background-color: #50B5AE;
-    text-align: center;
-    min-width: 200px;
-    width: 30%;
-}
+/*.title {*/
+/*    background-color: #50B5AE;*/
+/*    text-align: center;*/
+/*    min-width: 200px;*/
+/*    width: 30%;*/
+/*}*/
 
 .skills {
     display: flex;

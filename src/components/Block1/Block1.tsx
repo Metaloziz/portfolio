@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
 
-import commonStyle from '../../common/styles/Container.module.css';
-
 import style from './Block1.module.css';
+
+import commonStyle from 'common/styles/common.module.css';
 
 export const Block1 = (): ReactElement => (
   <div className={`${commonStyle.generalBlock}  ${style.generalBlock}`}>
