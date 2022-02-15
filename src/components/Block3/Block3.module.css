@@ -17,10 +17,6 @@
     height: auto;
 }
 
-/*h3 {*/
-/*    text-align: center;*/
-/*}*/
-
 
 .picturesBlock {
     display: flex;
@@ -43,7 +39,7 @@
     background-color: #A5E6E1;
     min-width: 250px;
     width: 40%;
-    height: 50vh;
+    min-height: 50vh;
     border: 1px solid;
     border-radius: 10px;
     text-align: center;
@@ -66,16 +62,15 @@
     align-items: center;
     justify-content: center;
     min-width: 240px;
-    height: 10vh;
+    min-height: 10vh;
     width: 90%;
     border: 1px solid;
     border-radius: 10px;
 }
 
-/*h4 {*/
-/*    margin: 0;*/
-/*}*/
-
+.description h4 {
+    margin: 0;
+}
 
 
 
