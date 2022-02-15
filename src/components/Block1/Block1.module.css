@@ -1,7 +1,5 @@
 .generalBlock {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100vh;
-    align-items: center;
+    /*background-color: rgba(192, 35, 35, 0.55);*/
 }
 
 .text {
@@ -28,6 +26,6 @@
 
 @media screen and (max-width: 1000px) {
     .text {
-        background-color: red;
+        /*background-color: red;*/
     }
 }

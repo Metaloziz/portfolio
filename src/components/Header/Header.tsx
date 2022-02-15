@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
 
-import { Navigation } from '../Navigation/Navigation';
-
 import style from './Header.module.css';
+
+import { Navigation } from 'components/Navigation';
 
 export const Header = (): ReactElement => (
   <div className={style.generalBlock}>

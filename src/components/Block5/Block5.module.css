@@ -1,10 +1,10 @@
 .generalBlock {
-    background-color: rgba(0, 0, 0, 0.6);
+    /*background-color: rgba(0, 0, 0, 0.6);*/
     min-height: 30vh;
+    /*align-items: center;*/
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .container {

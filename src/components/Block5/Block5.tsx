@@ -5,7 +5,7 @@ import commonStyle from '../../common/styles/Container.module.css';
 import style from './Block5.module.css';
 
 export const Block5 = (): ReactElement => (
-  <div className={style.generalBlock}>
+  <div className={`${commonStyle.generalBlock} ${style.generalBlock}`}>
     <div className={`${commonStyle.container} ${style.container}`}>
       <h3>Block 5</h3>
       <div className={style.cubesBlock}>

@@ -10,6 +10,14 @@
     flex-wrap: wrap;
 }
 
+.generalBlock {
+    /*background-color: #181818;*/
+    background-color: rgba(213, 210, 210, 0.55);
+    align-items: center;
+    height: 100vh;
+}
+
+
 /*width: 80%;*/
 /*height: 100%;*/
 /*border: 1px rgba(0, 0, 0, 0.5) solid;*/
