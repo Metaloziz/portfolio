@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Colus';
+    src: url('fonts/Colus.woff2') format('woff2'),
+    url('fonts/Colus.ttf') format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ url('fonts/Colus-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .container {
     width: 80%;
@@ -16,20 +23,16 @@
     align-items: center;
     height: 100vh;
 }
+
 .title {
-    background-color: #50B5AE;
+    font-family: 'Colus', sans-serif;
+    /*background-color: #50B5AE;*/
     text-align: center;
     min-width: 200px;
-    width: 30%;
+    font-size: 30px;
+    /*line-height: 41px;*/
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin: 0;
 }
 
-
-
-/*width: 80%;*/
-/*height: 100%;*/
-/*border: 1px rgba(0, 0, 0, 0.5) solid;*/
-/*margin: 0 auto;*/
-/*display: flex;*/
-/*align-items: center;*/
-/*justify-content: space-evenly;*/
-/*flex-wrap: wrap*/
