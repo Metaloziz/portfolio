@@ -1,9 +1,11 @@
-import commonStyle from "../../common/styles/Container.module.css";
-import style from './Block3.module.css'
+import { ReactElement } from 'react';
 
-export const Block3 = () => {
-  return <div className={style.generalBlock}>
+import commonStyle from '../../common/styles/Container.module.css';
 
+import style from './Block3.module.css';
+
+export const Block3 = (): ReactElement => (
+  <div className={style.generalBlock}>
     <div className={`${commonStyle.container} ${style.container}`}>
       <h3>Block_3</h3>
       <div className={style.picturesBlock}>
@@ -24,4 +26,4 @@ export const Block3 = () => {
       </div>
     </div>
   </div>
-}
+);

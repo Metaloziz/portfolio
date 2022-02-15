@@ -1,9 +1,11 @@
-import s from './Header.module.css'
-import {Navigation} from "../Navigation/Navigation";
+import { ReactElement } from 'react';
 
+import { Navigation } from '../Navigation/Navigation';
 
-export const Header = () => {
-  return <div className={s.generalBlock}>
-    <Navigation/>
+import style from './Header.module.css';
+
+export const Header = (): ReactElement => (
+  <div className={style.generalBlock}>
+    <Navigation />
   </div>
-}
+);
