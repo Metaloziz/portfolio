@@ -51,10 +51,15 @@
     align-items: center;
     justify-content: center;
     min-width: 240px;
-    height: 35vh;
+    min-height: 50vh;
+    height: 90%;
     width: 90%;
     border: 1px solid;
     border-radius: 10px;
+    /*сокращение до размеров блока*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center ;
 }
 
 .description {
