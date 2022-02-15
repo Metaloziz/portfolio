@@ -5,6 +5,17 @@
     height: auto;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    width: 80%;
+    height: auto;
+}
+
 /*.title {*/
 /*    background-color: #50B5AE;*/
 /*    text-align: center;*/

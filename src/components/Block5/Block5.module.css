@@ -9,6 +9,7 @@
 
 .container {
     min-height: 30vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;

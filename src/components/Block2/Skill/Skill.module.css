@@ -26,6 +26,7 @@
 .text {
     border: 1px black solid;
     width: 90%;
+    font-family: 'Montserrat Alternates', sans-serif;
     /*min-height: 10vh;*/
     /*width: 25vh;*/
     /*display: flex;*/
