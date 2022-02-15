@@ -8,7 +8,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 10vh;
     align-items: center;
     flex-wrap: nowrap;
     min-height: 100vh;

@@ -12,7 +12,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    row-gap: 1vh;
+    row-gap: 10vh;
 }
 
 .cubesBlock {
