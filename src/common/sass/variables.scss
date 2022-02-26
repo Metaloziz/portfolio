@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Colus';
+  src: url('../sass/fonts/Colus.woff2') format('woff2'),
+  url('../sass/fonts/Colus.ttf') format('truetype'), url('../sass/fonts/Colus-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font
+$fontTitleH3: 'Colus', sans-serif;
+$fontFamilyTitleH5: 200 16px/1.7 Kanit, sans-serif;
+$textFontDescription: 200 16px/1.7 Kanit, sans-serif;
+
+
+
+//background
+$backgroundTextColor: #fff;
+$primaryColor: #A5E6E1;
+$backgroundColorFirst: #D5D2D28C;
+$backgroundColorSecond: #18181880;
+$backgroundButtonColor: rgba(0, 0, 0, 0.83);
+$textButtonColor: $backgroundTextColor;
+$navigationTextColor: $backgroundTextColor;
+$textColor: black;

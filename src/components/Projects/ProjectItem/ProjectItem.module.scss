@@ -1,0 +1,61 @@
+@import "../../../common/sass/variables";
+@import "../../../common/sass/mixins";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $primaryColor;
+  min-width: 250px;
+  width: 40%;
+  min-height: 50vh;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+
+  .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 50vh;
+    height: 90%;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 10px;
+    /*сокращение до размеров блока*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  .picture::before {
+    position: absolute;
+    content: '';
+    background-color: $backgroundColorSecond;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 10vh;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+
+  .text {
+    @include textDescription();
+  }
+}
+

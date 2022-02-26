@@ -1,1 +1,2 @@
-export { TitleH3 } from './Title';
+export { Title } from './Title';
+export { Button } from './Button';

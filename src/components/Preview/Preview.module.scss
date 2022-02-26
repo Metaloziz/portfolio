@@ -1,0 +1,41 @@
+@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
+
+.generalBlock {
+  @include generalBlock()
+  /*background-color: rgba(192, 35, 35, 0.55);*/
+}
+
+.container{
+  @include container();
+  justify-content: space-around;
+}
+
+.text {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70vh;
+  background-color: $primaryColor;
+  border-radius: 10px;
+  height: 20vh ;
+}
+
+.photo {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 50vh;
+  height: 50vh;
+  background-color: $primaryColor;
+}
+
+@media screen and (max-width: 1000px) {
+  .text {
+    /*background-color: red;*/
+  }
+}

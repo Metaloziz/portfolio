@@ -1,0 +1,41 @@
+@import "../../../common/sass/variables";
+@import "../../../common/sass/mixins";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1vh;
+  background-color: $primaryColor;
+  border: 1px solid;
+  border-radius: 10px;
+  min-height: 30vh;
+  /*width: 30vh;*/
+  width: 250px;
+
+  .icon {
+    border: 1px solid;
+    min-height: 10vh;
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    @include textDescription();
+    //width: 90%;
+    ////font-family: 'Montserrat Alternates', sans-serif;
+    //text-align: center;
+    ///*margin-top: 30px;*/
+    //font: 200 16px/1.7 Kanit, sans-serif;
+    //letter-spacing: 0.03em;
+    //color: #555;
+    //background-color: #fff;
+    //-webkit-font-smoothing: antialiased;
+  }
+}
+
+

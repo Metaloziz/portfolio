@@ -1,1 +1,1 @@
-export { TitleH3 } from 'common/components/Title/TitleH3';
+export { Title } from 'common/components/Title/Title';

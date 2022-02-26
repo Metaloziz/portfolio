@@ -1,0 +1,39 @@
+@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
+
+
+.generalBlock {
+  @include generalBlock();
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    .container {
+      @include container();
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10vh;
+        align-items: center;
+        flex-wrap: nowrap;
+        min-height: 100vh;
+        width: 80%;
+        height: auto;
+        .picturesBlock {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 1vh;
+                border: 1px solid;
+                min-height: 60vh;
+                height: auto;
+                width: 90%;
+                border-radius: 10px;
+            }
+    }
+}
+
+
+
+

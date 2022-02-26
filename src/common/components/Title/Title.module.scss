@@ -1,0 +1,36 @@
+@import "../../sass/variables";
+
+.titleH3 {
+  font-family: $fontTitleH3;
+  text-align: center;
+  min-width: 200px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 600;
+  margin: 5vh 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 60%;
+    height: 2px;
+    background-color: #3cffe4;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.titleH5 {
+  //font-family: 'Colus', sans-serif;
+  font: $fontFamilyTitleH5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  color: #555;
+  margin: 30px;
+}

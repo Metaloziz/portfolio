@@ -1,0 +1,27 @@
+@import "../../sass/variables";
+@import "../../sass/variables";
+
+
+.item {
+  background: $backgroundColorSecond;
+  color: white;
+  padding: 8px 25px 6px 25px;
+  border: none;
+  font: $textFontDescription;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  transition: all ease 0.8s;
+  position: relative;
+
+  &:hover {
+    background-color: $primaryColor;
+    color: #555555;
+    //opacity: 100%;
+  }
+
+}
+

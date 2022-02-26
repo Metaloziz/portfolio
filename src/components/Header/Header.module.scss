@@ -1,0 +1,13 @@
+@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
+
+.generalBlock {
+  @include generalBlock();
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between;
+  height: 10vh;
+  background-color: $backgroundColorSecond;
+  gap: 20%;
+}
