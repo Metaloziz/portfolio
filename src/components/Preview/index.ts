@@ -1,1 +1,1 @@
-export { Preview } from 'components/Preview/Preview';
+export { Preview } from './Preview';

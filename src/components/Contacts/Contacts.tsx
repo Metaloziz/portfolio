@@ -1,20 +1,21 @@
-import { ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 
-import { Button, Title } from 'common/components';
-import style from 'components/Contacts/Contacts.module.scss';
+import style from './Contacts.module.scss';
 
-export const Contacts = (): ReactElement => (
+import { Button, Title } from 'common';
+
+export const Contacts: FC = (): ReactElement => (
   <div className={`${style.generalBlock}`}>
     <div className={`${style.container} `}>
       <Title value="Contacts title" size="h3" />
       <div className={style.contact}>
-        <Title value="contacts" size="h5" />
+        <Title value="contact with me" size="h5" />
         <form>
           <input type="text" />
           <input type="text" />
           <textarea />
         </form>
-        <Button name="set" />
+        <Button name="send" />
       </div>
     </div>
   </div>

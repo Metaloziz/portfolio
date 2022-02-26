@@ -1,10 +1,10 @@
-import { ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 
-// import commonStyle from 'common/styles/common.module.css';
-import { Title } from 'common/components';
-import style from 'components/Preview/Preview.module.scss';
+import style from './Preview.module.scss';
 
-export const Preview = (): ReactElement => (
+import { Title } from 'common';
+
+export const Preview: FC = (): ReactElement => (
   <div className={style.generalBlock}>
     <div className={style.container}>
       <div className={style.text}>

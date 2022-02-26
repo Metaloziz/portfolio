@@ -1,11 +1,11 @@
-import { ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 
-import { Title } from 'common/components';
-// import commonStyle from 'common/styles/common.module.css';
-import { Skill } from 'components/Skills/Skill';
-import style from 'components/Skills/Skills.module.scss';
+import { Skill } from './Skill';
+import style from './Skills.module.scss';
 
-export const Skills = (): ReactElement => (
+import { Title } from 'common';
+
+export const Skills: FC = (): ReactElement => (
   <div className={style.generalBlock}>
     <div className={style.container}>
       <Title value="Skills" size="h3" />

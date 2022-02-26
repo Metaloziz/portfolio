@@ -1,9 +1,10 @@
-import { ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 
-import { Title } from 'common/components';
-import style from 'components/Skills/Skill/Skill.module.scss';
+import style from './Skill.module.scss';
 
-export const Skill = (): ReactElement => (
+import { Title } from 'common';
+
+export const Skill: FC = (): ReactElement => (
   <div className={style.item}>
     <div className={style.icon}>icon</div>
     <Title value="title" size="h5" />

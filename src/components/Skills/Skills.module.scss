@@ -1,7 +1,6 @@
 @import "../../common/sass/variables";
 @import "../../common/sass/mixins";
 
-
 .generalBlock {
   @include generalBlock();
   background-color: $backgroundColorSecond;

@@ -1,17 +1,17 @@
 import { ReactElement } from 'react';
 
+import { ProjectItemPropsType, ProjectItem } from './ProjectItem';
+import style from './Projects.module.scss';
+
 import img1 from 'assets/images/react.png';
 import img2 from 'assets/images/redux.jpg';
-import { Title } from 'common/components';
-// import commonStyle from 'common/styles/common.module.css';
-import { ProjectItem, Block3ItemPT } from 'components/Projects/ProjectItem/ProjectItem';
-import style from 'components/Projects/Projects.module.scss';
+import { Title } from 'common';
 
 export const Projects = (): ReactElement => {
-  const obj1: Block3ItemPT = {
+  const obj1: ProjectItemPropsType = {
     backgroundImage: `url(${img1})`,
   };
-  const obj2: Block3ItemPT = {
+  const obj2: ProjectItemPropsType = {
     backgroundImage: `url(${img2})`,
   };
 

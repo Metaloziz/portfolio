@@ -23,7 +23,6 @@
 }
 
 .titleH5 {
-  //font-family: 'Colus', sans-serif;
   font: $fontFamilyTitleH5;
   text-align: center;
   font-size: 18px;
@@ -31,6 +30,6 @@
   text-transform: uppercase;
   letter-spacing: 0.18em;
   line-height: 1.5;
-  color: #555;
+  color: $titleColorH3;
   margin: 30px;
 }

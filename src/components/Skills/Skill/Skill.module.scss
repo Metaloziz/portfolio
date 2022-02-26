@@ -12,7 +12,6 @@
   border: 1px solid;
   border-radius: 10px;
   min-height: 30vh;
-  /*width: 30vh;*/
   width: 250px;
 
   .icon {
@@ -26,15 +25,6 @@
 
   .text {
     @include textDescription();
-    //width: 90%;
-    ////font-family: 'Montserrat Alternates', sans-serif;
-    //text-align: center;
-    ///*margin-top: 30px;*/
-    //font: 200 16px/1.7 Kanit, sans-serif;
-    //letter-spacing: 0.03em;
-    //color: #555;
-    //background-color: #fff;
-    //-webkit-font-smoothing: antialiased;
   }
 }
 

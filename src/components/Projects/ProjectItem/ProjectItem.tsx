@@ -1,17 +1,18 @@
-import { ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 
-import { Button, Title } from 'common/components';
-import style from 'components/Projects/ProjectItem/ProjectItem.module.scss';
+import style from './ProjectItem.module.scss';
 
-export type Block3ItemPT = {
+import { Button, Title } from 'common';
+
+export type ProjectItemPropsType = {
   backgroundImage: string;
 };
 
 type NewType = {
-  styleProps: Block3ItemPT;
+  styleProps: ProjectItemPropsType;
 };
 
-export const ProjectItem = ({ styleProps }: NewType): ReactElement => (
+export const ProjectItem: FC<NewType> = ({ styleProps }): ReactElement => (
   <div className={style.item}>
     <div className={style.picture} style={styleProps}>
       <Button name="look" />

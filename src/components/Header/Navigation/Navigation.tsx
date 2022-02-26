@@ -1,9 +1,10 @@
-import { ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 
-import { Button } from 'common/components';
-import style from 'components/Header/Navigation/Navigation.module.scss';
+import style from './Navigation.module.scss';
 
-export const Navigation = (): ReactElement => (
+import { Button } from 'common';
+
+export const Navigation: FC = (): ReactElement => (
   <div className={style.navigation}>
     <Button name="general" />
     <Button name="skills" />
