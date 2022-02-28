@@ -15,11 +15,13 @@ $textFontDescription: 200 16px/1.7 Kanit, sans-serif;
 
 //Color
 $backgroundTextColor: #fff;
-$primaryColor: #A5E6E1;
-$backgroundColorFirst: #D5D2D28C;
-$backgroundColorSecond: #18181880;
+//$primaryColor: #A5E6E1;
+$primaryColor: #185672;
+$backgroundColorFirst: #191b1d;
+$backgroundColorSecond: #131517;
 $backgroundButtonColor: rgba(0, 0, 0, 0.83);
 $textButtonColor: $backgroundTextColor;
 $navigationTextColor: $backgroundTextColor;
 $textColor: black;
-$titleColorH3: #555
+//$titleColorH3: #555
+$titleColorH3: $backgroundTextColor

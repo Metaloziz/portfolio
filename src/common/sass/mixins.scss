@@ -26,3 +26,9 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+@mixin imageCenterProperty(){
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

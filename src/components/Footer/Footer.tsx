@@ -14,7 +14,7 @@ export const Footer: FC = (): ReactElement => (
         <div className={style.cube} />
         <div className={style.cube} />
       </div>
-      <Title value="2022. Все права защищены" size="h5" />
+      <Title value="© 2022 Copyrights. All Rights Reserved." size="h5" />
     </div>
   </div>
 );
