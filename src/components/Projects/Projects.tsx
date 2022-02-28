@@ -1,29 +1,27 @@
 import { ReactElement } from 'react';
 
-import { ProjectItemPropsType, ProjectItem } from './ProjectItem';
+import { ProjectItem } from './ProjectItem';
 import style from './Projects.module.scss';
 
-import img1 from 'assets/images/react.png';
-import img2 from 'assets/images/redux.jpg';
+import SOCIAL_NETWORK from 'assets/images/images_projects/SN.png';
+import TO_DO_LIST from 'assets/images/images_projects/TDL.png';
 import { Title } from 'common';
+import { ProjectsType } from 'components/Projects/ProjectItem/ProjectItem';
 
-export const Projects = (): ReactElement => {
-  const obj1: ProjectItemPropsType = {
-    backgroundImage: `url(${img1})`,
-  };
-  const obj2: ProjectItemPropsType = {
-    backgroundImage: `url(${img2})`,
-  };
+const ProjectItems: ProjectsType[] = [
+  { title: 'Social Network', img: { backgroundImage: `url(${SOCIAL_NETWORK})` } },
+  { title: 'To do list', img: { backgroundImage: `url(${TO_DO_LIST})` } },
+];
 
-  return (
-    <div className={style.generalBlock}>
-      <div className={style.container}>
-        <Title value="Projects" size="h3" />
-        <div className={style.picturesBlock}>
-          <ProjectItem styleProps={obj2} />
-          <ProjectItem styleProps={obj1} />
-        </div>
+export const Projects = (): ReactElement => (
+  <div className={style.generalBlock}>
+    <div className={style.container}>
+      <Title value="Projects" size="h3" />
+      <div className={style.picturesBlock}>
+        {ProjectItems.map(el => (
+          <ProjectItem key={el.title} title={el.title} img={el.img} />
+        ))}
       </div>
     </div>
-  );
-};
+  </div>
+);

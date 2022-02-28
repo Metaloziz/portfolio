@@ -11,17 +11,17 @@
   background-color: $primaryColor;
   border: 1px solid;
   border-radius: 10px;
-  min-height: 30vh;
-  width: 250px;
+  height: 250px;
+  width: 140px;
+  border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
+  transition: all ease 1s;
 
   .icon {
     @include imageCenterProperty();
-    border: 1px solid;
     min-height: 10vh;
-    width: 10vh;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
+    min-width: 10vh;
+    position: relative;
+    transition: all ease 1s;
   }
 
   .text {

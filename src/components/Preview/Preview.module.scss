@@ -3,10 +3,11 @@
 
 .generalBlock {
   @include generalBlock();
-  height: 90vh;
+  min-height: 90vh;
   .container {
     @include container();
     justify-content: space-around;
+    gap: 5vh;
     .text {
       padding: 1%;
       display: flex;
@@ -16,6 +17,7 @@
       background-color: $primaryColor;
       border-radius: 10px;
       height: 20vh;
+      transition: all ease 1s;
     };
     .photo {
       padding: 1%;
@@ -28,8 +30,7 @@
       height: 70vh;
       @include imageCenterProperty();
       position: relative;
-      //background-color: $primaryColor;
-      //background: ;
+      transition: all ease 1s;
     }
   }
 }

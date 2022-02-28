@@ -4,25 +4,24 @@ import style from './ProjectItem.module.scss';
 
 import { Button, Title } from 'common';
 
-export type ProjectItemPropsType = {
-  backgroundImage: string;
+export type ProjectsType = {
+  title: string;
+  img: {
+    backgroundImage: string;
+  };
 };
 
-type NewType = {
-  styleProps: ProjectItemPropsType;
-};
-
-export const ProjectItem: FC<NewType> = ({ styleProps }): ReactElement => (
+export const ProjectItem: FC<ProjectsType> = ({ img, title }): ReactElement => (
   <div className={style.item}>
-    <div className={style.picture} style={styleProps}>
+    <div className={style.picture} style={img}>
       <Button name="look" />
     </div>
     <div className={style.description}>
-      <Title value="title" size="h5" />
+      <Title value={title} size="h5" />
       <span className={style.text}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet asperiores
-        consequuntur delectus doloremque esse eum, id ipsa magnam odio pariatur provident
-        ratione voluptatem? Atque et iste maxime pariatur soluta?
+        Stack: SCSS, JavaScript, TypeScript, React, Redux, Reduxthunk, Redux-form, Axios,
+        Reselect; Using TypeScript for best code control; Reusable components development;
+        Refactoring, bug fixing, deploying; Organizing correct app architecture
       </span>
     </div>
   </div>

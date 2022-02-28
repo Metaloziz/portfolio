@@ -13,6 +13,7 @@
   border: 1px solid;
   border-radius: 10px;
   text-align: center;
+  border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
 
   .picture {
     display: flex;
@@ -21,25 +22,42 @@
     min-width: 240px;
     min-height: 50vh;
     height: 90%;
-    width: 90%;
-    border: 1px solid;
+    width: 100%;
     border-radius: 10px;
-    /*сокращение до размеров блока*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    transition: all ease 1s;
     position: relative;
-  }
+    border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
+    @include imageCenterProperty();
 
-  .picture::before {
-    position: absolute;
-    content: '';
-    background-color: $backgroundColorSecond;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.5;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $backgroundColorSecond;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all ease 1s;
+      border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
+    }
+
+    &:hover {
+      width: 120%;
+      height: 80%;
+    }
+
+    &:hover::before {
+      opacity: 0.7;
+    }
+
+    button {
+      opacity: 0.4;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   .description {
@@ -47,11 +65,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 240px;
+    //min-width: 100%;
     min-height: 10vh;
-    width: 90%;
-    border: 1px solid;
-    border-radius: 10px;
+    width: 100%;
+    //border: black solid 1px;
+    //border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
   }
 
   .text {

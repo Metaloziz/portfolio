@@ -12,16 +12,24 @@ $fontFamilyTitleH5: 200 16px/1.7 Kanit, sans-serif;
 $textFontDescription: 200 16px/1.7 Kanit, sans-serif;
 
 
+//just color
+$whit: #fff;
+$black: black;
 
-//Color
-$backgroundTextColor: #fff;
-//$primaryColor: #A5E6E1;
-$primaryColor: #185672;
+
+//backGroundColor
 $backgroundColorFirst: #191b1d;
 $backgroundColorSecond: #131517;
+
+//PrimaryColor
+$primaryColor: #185672;
+
+//TextColor
+$titleColorH3: $whit ;
+$textColor: $black;
+$navigationTextColor: $whit;
+
+//Color
+$backgroundTextColor: $whit;
 $backgroundButtonColor: rgba(0, 0, 0, 0.83);
-$textButtonColor: $backgroundTextColor;
-$navigationTextColor: $backgroundTextColor;
-$textColor: black;
-//$titleColorH3: #555
-$titleColorH3: $backgroundTextColor
+$textButtonColor: $whit;

@@ -1,13 +1,15 @@
 @import "./variables";
 
 @mixin textDescription() {
-  width: 100%;
   text-align: center;
   font: $textFontDescription;
   letter-spacing: 0.03em;
   color: $textColor;
   background-color: $backgroundTextColor;
   -webkit-font-smoothing: antialiased;
+  border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
+  padding: 5%;
+  margin: 5%;
 }
 
 @mixin generalBlock(){
@@ -25,6 +27,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 0 0 8vh 0;
 }
 
 @mixin imageCenterProperty(){

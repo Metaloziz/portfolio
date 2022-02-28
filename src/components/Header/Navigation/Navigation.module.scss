@@ -2,9 +2,9 @@
 @import "../../../common/sass/mixins";
 
 .navigation {
-
+  @include container();
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
@@ -13,7 +13,6 @@
   min-width: 250px;
   min-height: 5vh;
   border-radius: 10px;
-  //width: 80vh;
   gap: 15px;
   font-weight: 500;
 }
