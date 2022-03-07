@@ -2,7 +2,7 @@
 
 .titleH3 {
   font-family: $fontTitleH3;
-  color: $titleColorH3;
+  color: $titleColor;
   text-align: center;
   min-width: 200px;
   font-size: 30px;
@@ -31,6 +31,6 @@
   text-transform: uppercase;
   letter-spacing: 0.18em;
   line-height: 1.5;
-  color: $titleColorH3;
+  color: $titleColor;
   margin: 30px;
 }

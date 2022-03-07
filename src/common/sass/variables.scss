@@ -11,11 +11,12 @@ $fontTitleH3: 'Colus', sans-serif;
 $fontFamilyTitleH5: 200 16px/1.7 Kanit, sans-serif;
 $textFontDescription: 200 16px/1.7 Kanit, sans-serif;
 
-
 //just color
-$whit: #fff;
+$white: #fff;
 $black: black;
 
+// $shadowColor
+$shadowColor: rgba(0, 255, 192, 0.29);
 
 //backGroundColor
 $backgroundColorFirst: #191b1d;
@@ -25,11 +26,12 @@ $backgroundColorSecond: #131517;
 $primaryColor: #185672;
 
 //TextColor
-$titleColorH3: $whit ;
-$textColor: $black;
-$navigationTextColor: $whit;
+$titleColor: $white;
+$textColor: $white;
 
 //Color
-$backgroundTextColor: $whit;
 $backgroundButtonColor: rgba(0, 0, 0, 0.83);
-$textButtonColor: $whit;
+
+// border radius
+$textRadius: 10px;
+$boxRadius: 20px

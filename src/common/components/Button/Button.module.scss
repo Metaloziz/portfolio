@@ -4,7 +4,7 @@
 
 .item {
   background: $backgroundColorSecond;
-  color: white;
+  color: $textColor;
   padding: 8px 25px 6px 25px;
   border: none;
   font: $textFontDescription;
@@ -19,7 +19,7 @@
 
   &:hover {
     background-color: $primaryColor;
-    color: $titleColorH3
+    color: $titleColor
   }
 }
 

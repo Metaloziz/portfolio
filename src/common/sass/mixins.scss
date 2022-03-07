@@ -5,23 +5,22 @@
   font: $textFontDescription;
   letter-spacing: 0.03em;
   color: $textColor;
-  background-color: $backgroundTextColor;
+  background-color: $primaryColor;
   -webkit-font-smoothing: antialiased;
-  border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
-  padding: 5%;
-  margin: 5%;
+  border-radius: 0 0 15px 15px;
+  padding: 2%;
 }
 
-@mixin generalBlock(){
+@mixin generalBlock() {
   background-color: $backgroundColorFirst;
   align-items: center;
   height: 100vh;
 }
 
-@mixin container(){
+@mixin container() {
   width: 80%;
   height: 100%;
-  border: 1px rgb(0, 0, 0) solid;
+  //border: 1px rgb(0, 0, 0) solid;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -30,7 +29,7 @@
   padding: 0 0 8vh 0;
 }
 
-@mixin imageCenterProperty(){
+@mixin imageCenterProperty() {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,79 +1,97 @@
 @import "../../../common/sass/variables";
 @import "../../../common/sass/mixins";
 
-.item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: $primaryColor;
+.itemShadow {
+  background-image: linear-gradient(163deg, $primaryColor 0%, $white 100%);
+  border-radius: 20px;
+  transition: all .5s;
   min-width: 250px;
-  width: 40%;
+  width: 33%;
   min-height: 50vh;
-  border: 1px solid;
-  border-radius: 10px;
   text-align: center;
-  border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
 
-  .picture {
+  .item {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    min-width: 240px;
+    min-width: 250px;
+    width: auto;
     min-height: 50vh;
-    height: 90%;
-    width: 100%;
+    background-color: $backgroundColorSecond;
     border-radius: 10px;
-    transition: all ease 1s;
-    position: relative;
-    border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
-    @include imageCenterProperty();
+    transition: all .5s;
+    padding: 5px;
 
-    &::before {
-      position: absolute;
-      content: '';
-      background-color: $backgroundColorSecond;
-      opacity: 0;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: all ease 1s;
-      border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
+    .picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 240px;
+      min-height: 50vh;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+      transition: all ease .5s;
+      @include imageCenterProperty();
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: $backgroundColorSecond;
+        border-radius: 20px;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all ease 1s;
+      }
+
+      &:hover::before {
+        opacity: 0.7;
+      }
+
+      button {
+        opacity: 0.4;
+
+        &:hover {
+          box-shadow: 0px 0px 30px 1px $shadowColor;
+        }
+      }
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      //min-width: 100%;
+      min-height: 10vh;
+      width: 100%;
+      //border: black solid 1px;
+      //border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
+    }
+
+    .text {
+      @include textDescription();
     }
 
     &:hover {
-      width: 120%;
-      height: 80%;
-    }
+      transform: scale(0.98);
+      border-radius: 20px;
 
-    &:hover::before {
-      opacity: 0.7;
-    }
-
-    button {
-      opacity: 0.4;
-
-      &:hover {
+      button {
+        background-color: $primaryColor;
+        color: $titleColor;
         opacity: 1;
       }
     }
+
+
   }
 
-  .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    //min-width: 100%;
-    min-height: 10vh;
-    width: 100%;
-    //border: black solid 1px;
-    //border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
-  }
-
-  .text {
-    @include textDescription();
+  &:hover {
+    box-shadow: 0px 0px 30px 1px $shadowColor;
   }
 }
-
