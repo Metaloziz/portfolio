@@ -35,6 +35,13 @@
         height: 80px;
         background-color: $primaryColor;
         border-radius: 10px;
+        .icon {
+          @include imageCenterProperty();
+          min-height: 10vh;
+          min-width: 10vh;
+          position: relative;
+          transition: all ease 1s;
+        }
       }
     }
   }
