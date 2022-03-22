@@ -4,10 +4,12 @@
 .generalBlock {
   @include generalBlock();
   min-height: 90vh;
+
   .container {
     @include container();
     justify-content: space-around;
     gap: 5vh;
+
     .text {
       padding: 1%;
       display: flex;
@@ -18,7 +20,9 @@
       border-radius: 10px;
       height: 20vh;
       transition: all ease 1s;
-    };
+    }
+  ;
+
     .photo {
       padding: 1%;
       display: flex;
@@ -39,4 +43,15 @@
   .text {
     /*background-color: red;*/
   }
+}
+
+.particles {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
 }
