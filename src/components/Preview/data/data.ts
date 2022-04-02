@@ -14,7 +14,7 @@ export const particleParams = {
     shape: {
       type: 'circle',
       stroke: {
-        width: 0,
+        width: 1,
         color: '#000000',
       },
       polygon: {
@@ -22,17 +22,17 @@ export const particleParams = {
       },
     },
     opacity: {
-      value: 0.5,
-      random: false,
+      value: 10,
+      random: true,
       anim: {
         enable: false,
         speed: 1,
-        opacity_min: 0.1,
+        opacity_min: 1,
         sync: false,
       },
     },
     size: {
-      value: 0,
+      value: 10,
       random: true,
       anim: {
         enable: false,
@@ -45,7 +45,7 @@ export const particleParams = {
       enable: true,
       distance: 300,
       color: '#66fcf1',
-      opacity: 0.8128220708812408,
+      opacity: 10,
       width: 1,
     },
     move: {

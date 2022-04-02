@@ -25,9 +25,9 @@ export const Footer: FC = (): ReactElement => {
   return (
     <div className={style.generalBlock}>
       <div className={style.container}>
-        {/* <Slider> */}
+         <Slider>
         <Title value="Footer" size="h3" />
-        {/* </Slider> */}
+         </Slider>
         <div className={style.cubesBlock}>{elements}</div>
         <Title  value="© 2022 Copyrights. All Rights Reserved." size="h5" />
       </div>

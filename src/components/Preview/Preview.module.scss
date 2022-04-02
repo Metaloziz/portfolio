@@ -15,6 +15,7 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    padding: 5vh 0 5vh 0;
     gap: 5vh;
 
     .text {
@@ -27,7 +28,7 @@
       border-radius: 10px;
       min-height: 20vh;
       transition: all ease 1s;
-      @include titleFive();
+      @include titleH5();
       //font-size: 25px;
     }
   ;
@@ -62,6 +63,6 @@
   //left: 0;
   //bottom: 0;
   //right: 0;
-  opacity: 0.3;
+  opacity: 1;
   z-index: 0;
 }

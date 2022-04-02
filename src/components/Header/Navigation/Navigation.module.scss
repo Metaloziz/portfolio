@@ -15,4 +15,7 @@
   //border-radius: 10px;
   gap: 15px;
   font-weight: 500;
+  @media screen and (max-width: 850px){
+    flex-direction: column;
+  }
 }
