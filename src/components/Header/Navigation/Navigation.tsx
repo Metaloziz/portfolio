@@ -6,9 +6,17 @@ import { Button } from 'common';
 
 export const Navigation: FC = (): ReactElement => (
   <div className={style.navigation}>
-    <Button name="general" />
-    <Button name="skills" />
-    <Button name="projects" />
-    <Button name="contacts" />
+    <a href="#preview">
+      <Button name="general" />
+    </a>
+    <a href="#skills">
+      <Button name="skills" />
+    </a>
+    <a href="#projects">
+      <Button name="projects" />
+    </a>
+    <a href="#contacts">
+      <Button name="contacts" />
+    </a>
   </div>
 );
