@@ -3,9 +3,11 @@
 
 .generalBlock {
   @include generalBlock();
+  position: relative;
   background-color: $backgroundColorSecond;
   min-height: 100vh;
   height: auto;
+  z-index: 2;
 
   .container {
     @include container();

@@ -3,11 +3,13 @@
 
 .generalBlock {
   @include generalBlock();
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: $backgroundColorSecond;
   min-height: 80vh;
   height: auto;
+  z-index: 2;
 
   .container {
     @include container();

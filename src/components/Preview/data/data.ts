@@ -1,6 +1,9 @@
 export const particleParams = {
   fpsLimit: 30,
   particles: {
+    width: {
+      value: 100,
+    },
     number: {
       value: 20,
       density: {

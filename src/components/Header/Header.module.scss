@@ -3,6 +3,7 @@
 
 .generalBlock {
   @include generalBlock();
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -11,4 +12,5 @@
   height: auto;
   background-color: $backgroundColorSecond;
   gap: 20%;
+  z-index: 2;
 }

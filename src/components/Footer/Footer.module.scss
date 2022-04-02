@@ -20,6 +20,7 @@
     padding: 0;
 
     .cubesBlock {
+      position: relative;
       padding: 1vh;
       display: flex;
       background-color: $backgroundColorSecond;
