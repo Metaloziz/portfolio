@@ -14,7 +14,8 @@ export type ProjectsType = {
 export const ProjectItem: FC<ProjectsType> = ({ img, title }): ReactElement => (
   <div className={style.itemShadow}>
     <div className={style.item}>
-      <div className={style.picture} style={img}>
+      <div className={style.imageContainer}>
+        <div className={style.picture} style={img} />
         <Button name="look" />
       </div>
       <div className={style.description}>
