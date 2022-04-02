@@ -1,5 +1,7 @@
 import { FC, ReactElement } from 'react';
 
+import { Fade } from 'react-awesome-reveal';
+
 import { Skill } from './Skill';
 import style from './Skills.module.scss';
 
@@ -9,9 +11,9 @@ import { arrSkills } from 'components/Skills/data/data';
 
 export const Skills: FC = (): ReactElement => {
   const skills = arrSkills.map(el => (
-    <Slider key={el.title}>
+    <Fade key={el.title} triggerOnce>
       <Skill key={el.title} title={el.title} img={el.img} />
-    </Slider>
+    </Fade>
   ));
   return (
     <div id="skills" className={style.generalBlock}>

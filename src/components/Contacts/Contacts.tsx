@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { FC, ReactElement } from 'react';
 
 import { Fade } from 'react-awesome-reveal';

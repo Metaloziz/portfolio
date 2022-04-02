@@ -6,7 +6,7 @@
   border-radius: 20px;
   transition: all .5s;
   min-width: 250px;
-  width: 33%;
+  width: auto;
   min-height: 50vh;
   text-align: center;
 
@@ -16,7 +16,8 @@
     justify-content: space-around;
     align-items: center;
     min-width: 250px;
-    width: auto;
+    //width: 100px;
+    max-width: 300px;
     min-height: 50vh;
     background-color: $backgroundColorSecond;
     border-radius: 10px;
@@ -69,7 +70,7 @@
       justify-content: center;
       //min-width: 100%;
       min-height: 10vh;
-      width: 100%;
+      //width: 100%;
       //border: black solid 1px;
       //border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
     }

@@ -1,5 +1,7 @@
 import { ReactElement } from 'react';
 
+import { Fade } from 'react-awesome-reveal';
+
 import { ProjectItem } from './ProjectItem';
 import style from './Projects.module.scss';
 
@@ -12,11 +14,14 @@ import { ProjectsType } from 'components/Projects/ProjectItem/ProjectItem';
 const ProjectItems: ProjectsType[] = [
   { title: 'Social Network', img: { backgroundImage: `url(${SOCIAL_NETWORK})` } },
   { title: 'To do list', img: { backgroundImage: `url(${TO_DO_LIST})` } },
+  { title: 'To do list', img: { backgroundImage: `url(${TO_DO_LIST})` } },
 ];
 
 export const Projects = (): ReactElement => {
   const projects = ProjectItems.map(el => (
-    <ProjectItem key={el.title} title={el.title} img={el.img} />
+    <Fade key={el.title}>
+      <ProjectItem key={el.title} title={el.title} img={el.img} />
+    </Fade>
   ));
 
   return (

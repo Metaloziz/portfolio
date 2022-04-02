@@ -26,7 +26,7 @@ export const Preview: FC = (): ReactElement => (
             tiltMaxAngleX={15}
             tiltMaxAngleY={15}
             perspective={900}
-            scale={1.1}
+            scale={1}
             gyroscope={true}
       >
       <div className={style.photo} style={obj1}/>
@@ -35,7 +35,7 @@ export const Preview: FC = (): ReactElement => (
             tiltMaxAngleX={25}
             tiltMaxAngleY={25}
             perspective={900}
-            scale={1.1}
+            scale={1}
             gyroscope={true}
       >
       <div className={style.text}>
