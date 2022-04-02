@@ -20,7 +20,7 @@ const obj1: BackgroundImage = {
 
 export const Preview: FC = (): ReactElement => (
   <div id="preview" className={style.generalBlock}>
-    <Particles className={style.particles} params={particleParams} width={"100px"} height={"100px"}/>
+    <Particles className={style.particles} params={particleParams}/>
     <div className={style.container}>
       <Tilt
         transitionSpeed={10000}

@@ -40,8 +40,10 @@
   .divForm {
     position: relative;
     padding: 15px 0 0;
-    min-width: 400px;
+    min-width: 270px;
+    width: auto;
     height: auto;
+    transition: 0.7s;
   }
 
   input {
@@ -54,7 +56,7 @@
     color: $white;
     padding: 7px 0;
     background: transparent;
-    transition: border-color 0.2s;
+    transition: border-color 0.7s;
 
     &::placeholder {
       color: transparent;
@@ -71,20 +73,22 @@
     position: absolute;
     top: 0;
     display: block;
-    transition: all linear .5s;
+    transition: all linear .7s;
     font-size: 1rem;
     color: $gray;
   }
 
   input:focus {
+
     ~ .inputLabel {
       position: absolute;
       top: 0;
       display: block;
-      transition: 0.2s;
+      transition: 0.7s;
       font-size: 1rem;
       color: $primary;
       font-weight: 700;
+      //transition: 0.7s;
     }
 
     padding-bottom: 6px;
@@ -92,6 +96,7 @@
     border-width: 3px;
     border-image: linear-gradient(to right, $primary, $secondary);
     border-image-slice: 1;
+    transition: ease 0.7s;
   }
 
   button:hover {

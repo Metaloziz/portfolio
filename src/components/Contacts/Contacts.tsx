@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import { FC, ReactElement } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
@@ -13,17 +11,15 @@ export const Contacts: FC = (): ReactElement => (
   <div id="contacts" className={`${style.generalBlock}`}>
     <div className={`${style.container} `}>
       <Slider>
-        <Title value="Contacts" size="h3" />
+        <Title value="Say me hello !" size="h3" />
       </Slider>
-
       <div className={style.contact}>
-        <Title value="Say me hello !" size="h5" />
         <div className={style.inputs}>
-          <Fade>
+          <Fade triggerOnce>
             <div className={style.divForm}>
               <input type="input" placeholder="Name" name="name" id="name" required />
               <span id="name" className={style.inputLabel}>
-                Name
+                Your name
               </span>
             </div>
             <div className={style.divForm}>
@@ -44,7 +40,7 @@ export const Contacts: FC = (): ReactElement => (
                 placeholder="Message"
                 name="message"
                 id="message"
-                defaultValue="Hi ! I want to give you a offer"
+                defaultValue="Hi ! I have a offer for you "
               />
               <span id="message" className={style.inputLabel}>
                 Message

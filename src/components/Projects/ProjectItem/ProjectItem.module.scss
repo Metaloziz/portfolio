@@ -61,13 +61,13 @@
         min-height: 30vh;
         height: 100%;
         border-radius: 15px 15px 0 0;
-        transition: all ease .5s;
+        transition: all ease .7s;
       }
 
       button {
-        opacity: 0.4;
+        opacity: 0.0;
         position: absolute;
-        transition: all ease .5s;
+        transition: all ease .7s;
 
         &:hover {
           box-shadow: 0 0 30px 1px $shadowColor;
@@ -85,7 +85,7 @@
       //width: 100%;
       //border: black solid 1px;
       //border-radius: 2% 65% 10% 90% / 81% 10% 87% 15%;
-      transition: all ease .5s;
+      transition: all ease .7s;
     }
 
     .text {
@@ -103,10 +103,8 @@
       }
 
       .description{
-        filter: brightness(40%);
+        filter: brightness(20%);
       }
-
-      //filter: brightness(40%); ////      ----------------------
 
       button {
         background-color: $primaryColor;

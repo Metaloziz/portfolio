@@ -2,7 +2,7 @@ export const particleParams = {
   fpsLimit: 30,
   particles: {
     width: {
-      value: 100,
+      value: 1,
     },
     number: {
       value: 20,
@@ -25,7 +25,7 @@ export const particleParams = {
       },
     },
     opacity: {
-      value: 10,
+      value: 0.5,
       random: true,
       anim: {
         enable: false,
@@ -35,7 +35,7 @@ export const particleParams = {
       },
     },
     size: {
-      value: 10,
+      value: 1,
       random: true,
       anim: {
         enable: false,
