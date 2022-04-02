@@ -3,23 +3,32 @@
 
 .generalBlock {
   @include generalBlock();
-  min-height: 90vh;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 
   .container {
     @include container();
+    //height: auto;
+    //min-height: 100%;
     justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
     gap: 5vh;
 
     .text {
       padding: 1%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      width: 70vh;
+      justify-content: center;
+      width: 80vh;
       background-color: $primaryColor;
       border-radius: 10px;
-      height: 20vh;
+      min-height: 20vh;
       transition: all ease 1s;
+      @include titleFive();
+      //font-size: 25px;
     }
   ;
 
@@ -55,3 +64,7 @@
   right: 0;
   opacity: 0.3;
 }
+
+//.typeText {
+//  @include titleFive();
+//}

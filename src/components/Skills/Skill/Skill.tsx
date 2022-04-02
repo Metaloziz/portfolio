@@ -3,7 +3,7 @@ import { FC, ReactElement } from 'react';
 import style from './Skill.module.scss';
 
 import { Title } from 'common';
-import { SkillType } from 'components/Skills/Skills';
+import { SkillType } from 'components/Skills/data/data';
 
 export const Skill: FC<SkillType> = ({ img, title }): ReactElement => (
   <div className={style.item}>

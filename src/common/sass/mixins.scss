@@ -36,7 +36,6 @@
 }
 
 
-
 @mixin form() {
   .divForm {
     position: relative;
@@ -99,4 +98,16 @@
     background: $white;
     color: $black;
   }
+}
+
+@mixin titleFive() {
+  font: $fontFamilyTitleH5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  color: $titleColor;
+  margin: 30px;
 }
