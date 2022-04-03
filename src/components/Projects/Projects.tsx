@@ -10,9 +10,11 @@ import { Slider } from 'common/components/Slider/Slider';
 import { projectItems } from 'components/Projects/data/data';
 
 export const Projects = (): ReactElement => {
-  const projects = projectItems.map(({ title, img, description }) => (
+  const projects = projectItems.map(({ title, img, description, url }) => (
     <Fade key={title} triggerOnce>
-      <ProjectItem key={title} title={title} img={img} description={description} />
+      <a href={url} target="_blank" rel="noreferrer">
+        <ProjectItem key={title} title={title} img={img} description={description} />
+      </a>
     </Fade>
   ));
 
@@ -22,7 +24,7 @@ export const Projects = (): ReactElement => {
         <Slider>
           <Title value="Projects" size="h3" />
         </Slider>
-        <div className={style.picturesBlock}>{projects}</div>
+        <div className={style.projectBlock}>{projects}</div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { FC, ReactElement } from 'react';
 
-import { Preview, Skills, Projects, Contacts, Footer, Header } from 'components';
+import { Preview, Skills, Projects, Form, Contacts, Header } from 'components';
 
 const App: FC = (): ReactElement => (
   <div className="App">
@@ -8,8 +8,8 @@ const App: FC = (): ReactElement => (
     <Preview />
     <Skills />
     <Projects />
+    <Form />
     <Contacts />
-    <Footer />
   </div>
 );
 

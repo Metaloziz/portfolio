@@ -3,14 +3,7 @@ import { FC, ReactElement } from 'react';
 import style from './ProjectItem.module.scss';
 
 import { Button, Title } from 'common';
-
-export type ProjectsType = {
-  title: string;
-  img: {
-    backgroundImage: string;
-  };
-  description: string;
-};
+import { ProjectsType } from 'components/Projects/data/data';
 
 export const ProjectItem: FC<ProjectsType> = ({
   img,

@@ -7,7 +7,6 @@ import JS from 'assets/images/icons_skills/js.png';
 import MATERIAL_UI from 'assets/images/icons_skills/material_ui.png';
 import REACT from 'assets/images/icons_skills/react.png';
 import REDUX from 'assets/images/icons_skills/redux.png';
-import REDUX_SAGA from 'assets/images/icons_skills/redux_saga.png';
 import SASS from 'assets/images/icons_skills/sass.png';
 import STORYBOOK from 'assets/images/icons_skills/storybook.png';
 import TS from 'assets/images/icons_skills/typescript.png';
@@ -28,7 +27,6 @@ export const arrSkills: SkillsType = [
   { title: 'REDUX', img: { backgroundImage: `url(${REDUX})` } },
   { title: 'HTML5', img: { backgroundImage: `url(${HTML5})` } },
   { title: 'CSS3', img: { backgroundImage: `url(${CSS})` } },
-  { title: 'REDUX SAGA', img: { backgroundImage: `url(${REDUX_SAGA})` } },
   { title: 'FORMIK', img: { backgroundImage: `url(${FORMIK})` } },
   { title: 'GITHUB', img: { backgroundImage: `url(${GITHUB})` } },
   { title: 'AXIOS', img: { backgroundImage: `url(${AXIOS})` } },

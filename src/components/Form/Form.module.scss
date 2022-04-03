@@ -1,0 +1,46 @@
+@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
+
+.generalBlock {
+  @include generalBlock();
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $backgroundColorSecond;
+  min-height: 80vh;
+  height: auto;
+  z-index: 2;
+
+  .container {
+    @include container();
+    min-height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10vh;
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      min-height: 60vh;
+      background-color: $primaryColor;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 550px;
+      @include form();
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+

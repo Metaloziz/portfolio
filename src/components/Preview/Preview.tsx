@@ -1,5 +1,4 @@
-/* eslint-disable */
-import {FC, ReactElement} from 'react';
+import { FC, ReactElement } from 'react';
 
 import Tilt from 'react-parallax-tilt';
 import Particles from 'react-tsparticles';
@@ -7,20 +6,20 @@ import ReactTypingEffect from 'react-typing-effect';
 
 import style from './Preview.module.scss';
 
-import img1 from 'assets/images/ava.jpg';
-import {particleParams} from 'components/Preview/data/data';
+import avatar from 'assets/images/avatar/avatar.jpg';
+import { particleParams } from 'components/Preview/data/data';
 
 type BackgroundImage = {
   backgroundImage: string;
 };
 
-const obj1: BackgroundImage = {
-  backgroundImage: `url(${img1})`,
+const photoStyle: BackgroundImage = {
+  backgroundImage: `url(${avatar})`,
 };
 
 export const Preview: FC = (): ReactElement => (
   <div id="preview" className={style.generalBlock}>
-    <Particles className={style.particles} params={particleParams}/>
+    <Particles className={style.particles} params={particleParams} />
     <div className={style.container}>
       <Tilt
         transitionSpeed={10000}
@@ -30,7 +29,7 @@ export const Preview: FC = (): ReactElement => (
         scale={1}
         gyroscope
       >
-        <div className={style.photo} style={obj1}/>
+        <div className={style.photo} style={photoStyle} />
       </Tilt>
       <Tilt
         transitionSpeed={10000}
