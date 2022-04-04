@@ -1,34 +1,36 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2c4078a1.css",
-    "main.js": "/portfolio/static/js/main.5742da68.js",
+    "main.css": "/portfolio/static/css/main.4d326379.css",
+    "main.js": "/portfolio/static/js/main.932f4d22.js",
+    "static/js/415.78a7ec11.chunk.js": "/portfolio/static/js/415.78a7ec11.chunk.js",
     "static/js/787.edd59a96.chunk.js": "/portfolio/static/js/787.edd59a96.chunk.js",
-    "static/media/SN.png": "/portfolio/static/media/SN.13e1c8c89f85137b49ba.png",
-    "static/media/ava.jpg": "/portfolio/static/media/ava.394e92f8577d8b59ff46.jpg",
-    "static/media/telegram.png": "/portfolio/static/media/telegram.53b81bb8e784b9c8d097.png",
-    "static/media/TDL.png": "/portfolio/static/media/TDL.888a923119da28102745.png",
+    "static/media/avatar.jpg": "/portfolio/static/media/avatar.394e92f8577d8b59ff46.jpg",
     "static/media/Colus.ttf": "/portfolio/static/media/Colus.c861d43b623dd25cac42.ttf",
     "static/media/codewars.png": "/portfolio/static/media/codewars.86fbd09c072831557c1a.png",
     "static/media/github.png": "/portfolio/static/media/github.d5029864a3bf7c6d0fe9.png",
     "static/media/react.png": "/portfolio/static/media/react.4127b36258b5e9dc8f88.png",
+    "static/media/to_do_list.jpg": "/portfolio/static/media/to_do_list.565c1381ea233d8ce589.jpg",
     "static/media/Colus-Regular.woff": "/portfolio/static/media/Colus-Regular.c26aeb121f0367acf93b.woff",
     "static/media/redux.png": "/portfolio/static/media/redux.d85c0865ea5b3bc9612c.png",
     "static/media/sass.png": "/portfolio/static/media/sass.c5da83bb9ff45b84e0e7.png",
+    "static/media/social_network.jpg": "/portfolio/static/media/social_network.51967c9dc6cbac2d0db0.jpg",
     "static/media/css.png": "/portfolio/static/media/css.d7aa6915e7bb5ca1150b.png",
     "static/media/Colus.woff2": "/portfolio/static/media/Colus.022256a0254dee514361.woff2",
     "static/media/material_ui.png": "/portfolio/static/media/material_ui.cfc114917b76f3f4c569.png",
-    "static/media/redux_saga.png": "/portfolio/static/media/redux_saga.73449dfbc05d1caae366.png",
+    "static/media/learning_cards.jpg": "/portfolio/static/media/learning_cards.86da7aa5f3ef1bda284d.jpg",
+    "static/media/telegram.png": "/portfolio/static/media/telegram.79dfca8aba216f2d17f8.png",
     "static/media/storybook.png": "/portfolio/static/media/storybook.4e845e3fe31351da5a6c.png",
     "static/media/formik.png": "/portfolio/static/media/formik.0a01178817fd7e524c35.png",
     "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/typescript.png": "/portfolio/static/media/typescript.29073194eeda5803e7f3.png",
     "index.html": "/portfolio/index.html",
-    "main.2c4078a1.css.map": "/portfolio/static/css/main.2c4078a1.css.map",
-    "main.5742da68.js.map": "/portfolio/static/js/main.5742da68.js.map",
+    "main.4d326379.css.map": "/portfolio/static/css/main.4d326379.css.map",
+    "main.932f4d22.js.map": "/portfolio/static/js/main.932f4d22.js.map",
+    "415.78a7ec11.chunk.js.map": "/portfolio/static/js/415.78a7ec11.chunk.js.map",
     "787.edd59a96.chunk.js.map": "/portfolio/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c4078a1.css",
-    "static/js/main.5742da68.js"
+    "static/css/main.4d326379.css",
+    "static/js/main.932f4d22.js"
   ]
 }
