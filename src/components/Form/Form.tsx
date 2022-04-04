@@ -2,11 +2,12 @@ import { FC, ReactElement } from 'react';
 
 import { SubmitHandler, useForm } from 'react-hook-form';
 
+import { getRequest } from 'api/formAPI';
 import { Button, Title } from 'common';
 import { Slider } from 'common/components/Slider/Slider';
 import style from 'components/Form/Form.module.scss';
 
-type FormDataType = {
+export type FormDataType = {
   name: string;
   email: string;
   message: string;
@@ -20,7 +21,9 @@ export const Form: FC = (): ReactElement => {
   } = useForm<FormDataType>();
 
   const onLoginClick: SubmitHandler<FormDataType> = (e): void => {
-    console.log(e);
+    getRequest(e).then(() => {
+      console.log('done');
+    });
   };
 
   return (
