@@ -1,5 +1,6 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactElement, useState } from 'react';
 
+import { Fade } from 'react-awesome-reveal';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { getRequest } from 'api/formAPI';
@@ -14,6 +15,8 @@ export type FormDataType = {
 };
 
 export const Form: FC = (): ReactElement => {
+  const [isDisable, setIsDisable] = useState<boolean>(false);
+
   const {
     register,
     formState: { errors },
@@ -21,6 +24,7 @@ export const Form: FC = (): ReactElement => {
   } = useForm<FormDataType>();
 
   const onLoginClick: SubmitHandler<FormDataType> = (e): void => {
+    setIsDisable(true);
     getRequest(e).then(() => {
       console.log('done');
     });
@@ -36,44 +40,44 @@ export const Form: FC = (): ReactElement => {
         <div className={style.form}>
           <form onSubmit={handleSubmit(onLoginClick)}>
             <div className={style.inputs}>
-              {/* <Fade triggerOnce> */}
-              <div className={style.divForm}>
-                <label htmlFor="name">
+              <Fade triggerOnce>
+                <div className={style.divForm}>
+                  <label htmlFor="name">
+                    <input
+                      id="name"
+                      placeholder="name"
+                      {...register('name', { required: true })}
+                    />
+
+                    <span id="name" className={style.inputLabel}>
+                      Your name
+                    </span>
+                  </label>
+                </div>
+                <div className={style.divForm}>
                   <input
-                    id="name"
-                    placeholder="name"
-                    {...register('name', { required: true })}
+                    id="email"
+                    placeholder="email"
+                    {...register('email', { required: true })}
                   />
 
-                  <span id="name" className={style.inputLabel}>
-                    Your name
+                  <span id="email" className={style.inputLabel}>
+                    Your email
                   </span>
-                </label>
-              </div>
-              <div className={style.divForm}>
-                <input
-                  id="email"
-                  placeholder="email"
-                  {...register('email', { required: true })}
-                />
-
-                <span id="email" className={style.inputLabel}>
-                  Your email
-                </span>
-              </div>
-              <div className={style.divForm}>
-                <input
-                  id="message"
-                  placeholder="message"
-                  {...register('message', { required: true })}
-                />
-                <span id="message" className={style.inputLabel}>
-                  Message
-                </span>
-              </div>
-              {/* </Fade> */}
+                </div>
+                <div className={style.divForm}>
+                  <input
+                    id="message"
+                    placeholder="message"
+                    {...register('message', { required: true })}
+                  />
+                  <span id="message" className={style.inputLabel}>
+                    Message
+                  </span>
+                </div>
+              </Fade>
             </div>
-            <Button name="send" type="submit" />
+            <Button name="send" type="submit" disabled={isDisable} />
             <div>
               {errors.name?.type === 'required' && 'name is required'}
               {errors.email?.type === 'required' && 'email is required'}
