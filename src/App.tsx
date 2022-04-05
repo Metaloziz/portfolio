@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { FC, ReactElement } from 'react';
 
 import { Preview, Skills, Projects, Form, Contacts, Header } from 'components';

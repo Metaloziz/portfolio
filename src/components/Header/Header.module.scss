@@ -3,14 +3,27 @@
 
 .generalBlock {
   @include generalBlock();
-  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  align-content: space-between;
-  min-height: 10vh;
-  height: auto;
-  background-color: $backgroundColorSecond;
-  gap: 20%;
-  z-index: 2;
+  width: 40vw;
+  height: 100vh;
+  left: 65%;
+  z-index: 50;
+}
+
+
+.blur {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(0);
+  z-index: 10;
+}
+
+
+.active {
+  backdrop-filter: blur(2px);
 }
