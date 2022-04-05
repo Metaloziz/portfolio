@@ -118,7 +118,10 @@
         "peerDependencies": true
       }
     ],
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/default-props-match-prop-types": [
+      "error", { "allowRequiredDefaults": false }
+    ]
   },
   "settings": {
     "import/resolver": {

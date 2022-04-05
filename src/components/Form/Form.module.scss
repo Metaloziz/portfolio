@@ -14,12 +14,13 @@
   .container {
     @include container();
     min-height: 80vh;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 10vh;
 
-    .form {
+    .formBlock {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -38,6 +39,29 @@
         align-items: center;
         gap: 20px;
         width: 100%;
+      }
+
+      .resultMessage {
+        @include textDescription();
+        font: $fontFamilyTitleH5;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        line-height: 1.5;
+        padding: 0;
+        min-height: 40px;
+        width: auto;
+        color: rgb(255, 100, 247);
+
+        .loading {
+          color: $textColor;
+        }
+
+        .done {
+          color: $secondary;
+        }
       }
     }
   }

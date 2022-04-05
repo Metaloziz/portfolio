@@ -3,10 +3,11 @@ import { FC, ReactElement, useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import { getRequest } from 'api/formAPI';
+import { sendMessageCallBack } from 'api/formAPI';
 import { Button, Title } from 'common';
 import { Slider } from 'common/components/Slider/Slider';
 import style from 'components/Form/Form.module.scss';
+import { InputComponent } from 'components/Form/InputComponent/InputComponent';
 
 export type FormDataType = {
   name: string;
@@ -16,6 +17,7 @@ export type FormDataType = {
 
 export const Form: FC = (): ReactElement => {
   const [isDisable, setIsDisable] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const {
     register,
@@ -23,67 +25,52 @@ export const Form: FC = (): ReactElement => {
     handleSubmit,
   } = useForm<FormDataType>();
 
-  const onLoginClick: SubmitHandler<FormDataType> = (e): void => {
+  const sendMessage: SubmitHandler<FormDataType> = (e): void => {
+    setIsLoading(true);
     setIsDisable(true);
-    getRequest(e).then(() => {
-      console.log('done');
-    });
+    sendMessageCallBack(e, setIsLoading);
   };
+
+  const resultMessage =
+    (errors.name?.type === 'required' && 'name is required') ||
+    (errors.email?.type === 'required' && 'email is required');
 
   return (
     <div id="contacts" className={`${style.generalBlock}`}>
       <div className={`${style.container} `}>
         <Slider>
-          <Title value="Say me hello !" size="h3" />
+          <Title value="Say me hello" size="h3" />
         </Slider>
 
-        <div className={style.form}>
-          <form onSubmit={handleSubmit(onLoginClick)}>
-            <div className={style.inputs}>
-              <Fade triggerOnce>
-                <div className={style.divForm}>
-                  <label htmlFor="name">
-                    <input
-                      id="name"
-                      placeholder="name"
-                      {...register('name', { required: true })}
-                    />
+        <form onSubmit={handleSubmit(sendMessage)} className={style.formBlock}>
+          <div className={style.inputs}>
+            <Fade triggerOnce>
+              <InputComponent name="name" register={register} required maxLength={30} />
+              <InputComponent name="email" register={register} required maxLength={30} />
+              <InputComponent
+                name="message"
+                register={register}
+                required={false}
+                maxLength={30}
+                defaultValue="would you like an offer"
+              />
+            </Fade>
+          </div>
+          <div className={style.resultMessage}>
+            {isLoading ? <span className={style.loading}> Loading ... </span> : null}
 
-                    <span id="name" className={style.inputLabel}>
-                      Your name
-                    </span>
-                  </label>
-                </div>
-                <div className={style.divForm}>
-                  <input
-                    id="email"
-                    placeholder="email"
-                    {...register('email', { required: true })}
-                  />
-
-                  <span id="email" className={style.inputLabel}>
-                    Your email
-                  </span>
-                </div>
-                <div className={style.divForm}>
-                  <input
-                    id="message"
-                    placeholder="message"
-                    {...register('message', { required: true })}
-                  />
-                  <span id="message" className={style.inputLabel}>
-                    Message
-                  </span>
-                </div>
-              </Fade>
-            </div>
-            <Button name="send" type="submit" disabled={isDisable} />
             <div>
-              {errors.name?.type === 'required' && 'name is required'}
-              {errors.email?.type === 'required' && 'email is required'}
+              <span> {resultMessage} </span>
             </div>
-          </form>
-        </div>
+
+            {!isLoading && isDisable && (
+              <div>
+                <span className={style.done}> done </span>
+              </div>
+            )}
+          </div>
+          <Button name="send" type="submit" disabled={isDisable} />
+        </form>
       </div>
     </div>
   );

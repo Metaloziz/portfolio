@@ -8,3 +8,18 @@ export const instance = axios.create({
 
 export const getRequest = (data: FormDataType): Promise<any> =>
   instance.post('/send', data);
+
+type SendMessageCallBackType = (
+  data: FormDataType,
+  setIsLoading: (value: boolean) => void,
+) => void;
+
+export const sendMessageCallBack: SendMessageCallBackType = (
+  data,
+  setIsLoading,
+): void => {
+  getRequest(data).then(() => {
+    setIsLoading(false);
+    console.log('done');
+  });
+};

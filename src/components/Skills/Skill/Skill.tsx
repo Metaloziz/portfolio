@@ -10,6 +10,5 @@ export const Skill: FC<SkillType> = ({ img, title }): ReactElement => (
     <div className={style.icon} style={img} />
 
     <Title value={title} size="h5" />
-    {/* <span className={style.text}>Lorem ipsum dolor</span> */}
   </div>
 );

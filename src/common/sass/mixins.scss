@@ -39,15 +39,22 @@
   .divForm {
     position: relative;
     padding: 15px 0 0;
-    min-width: 270px;
+    min-width: 300px;
     width: auto;
+    max-width: 1000px;
     height: auto;
     transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
 
   input {
     font-family: inherit;
-    width: 100%;
+    //min-width: 340px;
+    width: 80%;
+    //width: 100%;
     border: 0;
     border-bottom: 2px solid $gray;
     outline: 0;
@@ -56,6 +63,7 @@
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.7s;
+    -webkit-box-shadow: 0 0 0 1000px $primaryColor inset;
 
     &::placeholder {
       color: transparent;
@@ -66,6 +74,16 @@
       cursor: text;
       top: 20px;
     }
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px $primaryColor inset;
+      -webkit-text-fill-color: $textColor;
+    }
+
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: $textColor;
+    }
+
   }
 
   .inputLabel {
@@ -84,15 +102,10 @@
       top: 0;
       display: block;
       transition: 0.7s;
-      font-size: 1rem;
       color: $primary;
-      font-weight: 700;
-      //transition: 0.7s;
     }
 
     padding-bottom: 6px;
-    font-weight: 700;
-    border-width: 3px;
     border-image: linear-gradient(to right, $primary, $secondary);
     border-image-slice: 1;
     transition: ease 0.7s;
@@ -100,7 +113,7 @@
 
   button:hover {
     background: $white;
-    color: $black;
+    color: $backgroundColorSecond;
   }
 }
 
