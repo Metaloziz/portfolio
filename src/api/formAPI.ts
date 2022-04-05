@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { FormDataType } from 'components/Form/Form';
+import { FormDataType } from 'components/Form/InputComponent';
 
 export const instance = axios.create({
   baseURL: process.env.REACT_APP_GMAIL_BASE_URL,
@@ -20,6 +20,5 @@ export const sendMessageCallBack: SendMessageCallBackType = (
 ): void => {
   getRequest(data).then(() => {
     setIsLoading(false);
-    console.log('done');
   });
 };

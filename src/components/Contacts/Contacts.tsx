@@ -2,10 +2,10 @@ import { FC, ReactElement } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
-import { Title } from 'common';
-import { Slider } from 'common/components/Slider/Slider';
-import style from 'components/Contacts/Contacts.module.scss';
-import { contactsData } from 'components/Contacts/data/data';
+import style from './Contacts.module.scss';
+import { contactsData } from './data';
+
+import { Title, Slider } from 'common';
 
 export const Contacts: FC = (): ReactElement => {
   const elements = contactsData.map(({ id, img, url }) => (

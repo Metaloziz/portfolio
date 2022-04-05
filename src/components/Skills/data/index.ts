@@ -1,0 +1,1 @@
+export { arrSkills } from './data';

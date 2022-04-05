@@ -2,17 +2,16 @@ import { FC, ReactElement } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
+import { arrSkills } from './data';
 import { Skill } from './Skill';
 import style from './Skills.module.scss';
 
-import { Title } from 'common';
-import { Slider } from 'common/components/Slider/Slider';
-import { arrSkills } from 'components/Skills/data/data';
+import { Title, Slider } from 'common';
 
 export const Skills: FC = (): ReactElement => {
-  const skills = arrSkills.map(el => (
-    <Fade key={el.title} triggerOnce>
-      <Skill key={el.title} title={el.title} img={el.img} />
+  const skills = arrSkills.map(({ img, title }) => (
+    <Fade key={title} triggerOnce>
+      <Skill key={title} title={title} img={img} />
     </Fade>
   ));
   return (

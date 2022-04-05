@@ -2,12 +2,11 @@ import { ReactElement } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
+import { projectItems } from './data';
 import { ProjectItem } from './ProjectItem';
 import style from './Projects.module.scss';
 
-import { Title } from 'common';
-import { Slider } from 'common/components/Slider/Slider';
-import { projectItems } from 'components/Projects/data/data';
+import { Title, Slider } from 'common';
 
 export const Projects = (): ReactElement => {
   const projects = projectItems.map(({ title, img, description, url }) => (

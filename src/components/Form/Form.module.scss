@@ -26,10 +26,11 @@
       align-items: center;
       justify-content: space-evenly;
       min-height: 60vh;
-      background-color: $primaryColor;
       border-radius: 20px;
+      min-width: 360px;
       width: 100%;
-      max-width: 550px;
+      max-width: 70vh;
+      background-color: $primaryColor;
       @include form();
 
       .inputs {
@@ -53,7 +54,7 @@
         padding: 0;
         min-height: 40px;
         width: auto;
-        color: rgb(255, 100, 247);
+        color: $textErrorColor;
 
         .loading {
           color: $textColor;

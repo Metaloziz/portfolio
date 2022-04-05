@@ -2,8 +2,13 @@ import { ReactElement } from 'react';
 
 import { UseFormRegister } from 'react-hook-form';
 
-import { FormDataType } from 'components/Form/Form';
-import style from 'components/Form/Form.module.scss';
+import style from '../Form.module.scss';
+
+export type FormDataType = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 type InputComponentType = {
   name: 'name' | 'email' | 'message';

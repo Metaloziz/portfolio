@@ -1,1 +1,1 @@
-export { Title } from 'common/components/Title/Title';
+export { Title } from './Title';

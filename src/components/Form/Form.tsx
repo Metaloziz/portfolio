@@ -3,17 +3,11 @@ import { FC, ReactElement, useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import { sendMessageCallBack } from 'api/formAPI';
-import { Button, Title } from 'common';
-import { Slider } from 'common/components/Slider/Slider';
-import style from 'components/Form/Form.module.scss';
-import { InputComponent } from 'components/Form/InputComponent/InputComponent';
+import style from './Form.module.scss';
+import { FormDataType, InputComponent } from './InputComponent';
 
-export type FormDataType = {
-  name: string;
-  email: string;
-  message: string;
-};
+import { sendMessageCallBack } from 'api';
+import { Button, Title, Slider } from 'common';
 
 export const Form: FC = (): ReactElement => {
   const [isDisable, setIsDisable] = useState<boolean>(false);
@@ -34,6 +28,12 @@ export const Form: FC = (): ReactElement => {
   const resultMessage =
     (errors.name?.type === 'required' && 'name is required') ||
     (errors.email?.type === 'required' && 'email is required');
+
+  const isDone = !isLoading && isDisable && (
+    <div>
+      <span className={style.done}>done</span>
+    </div>
+  );
 
   return (
     <div id="contacts" className={`${style.generalBlock}`}>
@@ -58,16 +58,10 @@ export const Form: FC = (): ReactElement => {
           </div>
           <div className={style.resultMessage}>
             {isLoading ? <span className={style.loading}> Loading ... </span> : null}
-
             <div>
               <span> {resultMessage} </span>
             </div>
-
-            {!isLoading && isDisable && (
-              <div>
-                <span className={style.done}> done </span>
-              </div>
-            )}
+            {isDone}
           </div>
           <Button name="send" type="submit" disabled={isDisable} />
         </form>

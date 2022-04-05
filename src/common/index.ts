@@ -1,1 +1,1 @@
-export { Title, Button } from './components';
+export { Title, Button, Slider, LinkComponent } from './components';

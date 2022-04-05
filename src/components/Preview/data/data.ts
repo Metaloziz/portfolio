@@ -1,3 +1,5 @@
+import avatar from 'assets/images/avatar/avatar.jpg';
+
 export const particleParams = {
   fpsLimit: 30,
   particles: {
@@ -64,4 +66,12 @@ export const particleParams = {
       },
     },
   },
+};
+
+type BackgroundImage = {
+  backgroundImage: string;
+};
+
+export const photoStyle: BackgroundImage = {
+  backgroundImage: `url(${avatar})`,
 };

@@ -34,12 +34,11 @@
   background-position: center;
 }
 
-
 @mixin form() {
   .divForm {
     position: relative;
     padding: 15px 0 0;
-    min-width: 300px;
+    min-width: 400px; // почему-то на ширину inputs влияет только минимальное значение
     width: auto;
     max-width: 1000px;
     height: auto;
@@ -49,12 +48,9 @@
     align-items: center;
   }
 
-
   input {
     font-family: inherit;
-    //min-width: 340px;
     width: 80%;
-    //width: 100%;
     border: 0;
     border-bottom: 2px solid $gray;
     outline: 0;
@@ -83,7 +79,6 @@
     &:-webkit-autofill:focus {
       -webkit-text-fill-color: $textColor;
     }
-
   }
 
   .inputLabel {
@@ -96,7 +91,6 @@
   }
 
   input:focus {
-
     ~ .inputLabel {
       position: absolute;
       top: 0;

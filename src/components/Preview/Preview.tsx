@@ -4,18 +4,8 @@ import Tilt from 'react-parallax-tilt';
 import Particles from 'react-tsparticles';
 import ReactTypingEffect from 'react-typing-effect';
 
+import { particleParams, photoStyle } from './data';
 import style from './Preview.module.scss';
-
-import avatar from 'assets/images/avatar/avatar.jpg';
-import { particleParams } from 'components/Preview/data/data';
-
-type BackgroundImage = {
-  backgroundImage: string;
-};
-
-const photoStyle: BackgroundImage = {
-  backgroundImage: `url(${avatar})`,
-};
 
 export const Preview: FC = (): ReactElement => (
   <div id="preview" className={style.generalBlock}>

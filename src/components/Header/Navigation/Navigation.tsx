@@ -1,11 +1,9 @@
 import { FC, ReactElement } from 'react';
 
+import { links } from './data';
 import style from './Navigation.module.scss';
 
-import { Button } from 'common';
-import { LinkComponent } from 'common/components/LinkComponent/LinkComponent';
-
-const links: string[] = ['preview', 'skills', 'projects', 'contacts'];
+import { Button, LinkComponent } from 'common';
 
 type NavigationPropsType = {
   isActiveMenu: boolean;
