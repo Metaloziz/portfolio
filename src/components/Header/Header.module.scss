@@ -14,7 +14,6 @@
   z-index: $navigation_GeneralBlock;
 }
 
-
 .blur {
   position: fixed;
   height: 100vh;
@@ -22,9 +21,8 @@
   backdrop-filter: blur(2px);
   background-color: rgba(28, 27, 27, 0.13);
   z-index: $navigation_Blur;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
-
 
 .active {
   transform: translateX(-100%);

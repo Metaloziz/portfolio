@@ -11,7 +11,6 @@ type ButtonCommonType = DefaultButtonPropsType & {
 };
 
 export const Button: FC<ButtonCommonType> = ({ name, ...restProps }): ReactElement => (
-  // eslint-disable-next-line react/jsx-props-no-spreading
   <button className={style.item} type="button" {...restProps}>
     {name}
   </button>

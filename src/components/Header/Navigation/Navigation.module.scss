@@ -3,7 +3,6 @@
 
 
 .navigationContainer {
-  //margin-right: 40px;
   position: relative;
   padding: 0 10% 0 0;
   border: #191b1d 1px solid;
@@ -13,7 +12,6 @@
   justify-content: flex-start;
   flex-direction: column;
 
-
   button {
     width: 230px;
   }
@@ -22,22 +20,19 @@
 .buttons {
   @include container();
   position: fixed;
-  //margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   justify-items: center;
   align-items: center;
-  padding: 11vh 1vh 0 1vh;
+  padding: 13vh 1vh 0 1vh;
   width: 250px;
   height: 100vh;
-  //min-height: 5vh;
-  //max-height: 30vh;
   gap: 15px;
   font-weight: 500;
   background-color: $backgroundColorFirst;
   transform: translateX(0);
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: $navigation_Buttons;
 }
 
@@ -46,11 +41,30 @@
 }
 
 .handleButton {
-  width: 250px;
+  width: 50px;
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
   position: fixed;
   padding: 5px;
-  transform: translateX(-115%);
+  transform: translateX(-200%);
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
   z-index: $navigation_HandleButtonMenu;
+
+
+  &.active {
+    width: 250px;
+    transform: translateX(-115%);
+
+    button {
+      border-radius: 0;
+      font-size: 18px;
+    }
+  }
+
+  button {
+    border-radius: 40px;
+    font-size: 22px;
+  }
 }
