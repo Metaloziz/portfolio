@@ -19,8 +19,8 @@ $black: black;
 $shadowColor: rgba(0, 255, 192, 0.29);
 
 //backGroundColor
-$backgroundColorFirst: #191b1d;
-$backgroundColorSecond: #131517;
+$backgroundColorFirst: #60695e;
+$backgroundColorSecond: #bdbd66;
 
 //PrimaryColor
 $primaryColor: #185672;
@@ -42,3 +42,10 @@ $primary: #11998e;
 $secondary: #38ef7d;
 $white: #fff;
 $gray: #9b9b9b;
+
+
+// z-index navigation
+$navigation_GeneralBlock: 50;
+$navigation_Blur: 51;
+$navigation_Buttons: 52;
+$navigation_HandleButtonMenu: 53;

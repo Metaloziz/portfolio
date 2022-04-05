@@ -16,7 +16,7 @@ export const Header: FC = (): ReactElement => {
 
   return (
     <div role="presentation" className={style.generalBlock} onClick={closeMenu}>
-      {/*<div className={`${style.blur} ${isActiveMenu ?  style.active: ''}`}/>*/}
+      <div className={`${style.blur} ${isActiveMenu ? style.active : ''}`}/>
       <Navigation isActiveMenu={isActiveMenu} setIsActiveMenu={setIsActiveMenu}
                   closeMenu={closeMenu}/>
     </div>
