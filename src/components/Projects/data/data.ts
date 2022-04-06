@@ -32,6 +32,6 @@ export const projectItems: ProjectItemsType[] = [
     img: { backgroundImage: `url(${SOCIAL_NETWORK})` },
     description:
       'It is app like facebook, but a few less. You can write a message, following on your friends and change your profile page. From profile page you can set your avatar, personal data and contacts. Of course you can set likes. A login page has a captcha.',
-    url: 'https://github.com/Metaloziz/social_network',
+    url: 'https://metaloziz.github.io/samurai_way_my/',
   },
 ];
