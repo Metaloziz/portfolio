@@ -42,8 +42,8 @@
 
         .icon {
           @include imageCenterProperty();
-          min-height: 10vh;
-          min-width: 10vh;
+          min-height: 80px;
+          min-width: 80px;
           position: relative;
           transition: all ease 1s;
         }

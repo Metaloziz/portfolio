@@ -52,7 +52,7 @@ export const Form: FC = (): ReactElement => {
                 register={register}
                 required={false}
                 maxLength={30}
-                defaultValue="would you like an offer"
+                defaultValue="I have an offer for you"
               />
             </Fade>
           </div>
