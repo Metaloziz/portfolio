@@ -1,5 +1,5 @@
-@import "../../common/sass/variables";
-@import "../../common/sass/mixins";
+@import "/src/common/sass/variables";
+@import "/src/common/sass/mixins";
 
 .generalBlock {
   @include generalBlock();
@@ -12,8 +12,6 @@
   .container {
     @include container();
     position: relative;
-    //height: auto;
-    //min-height: 100%;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
@@ -31,7 +29,6 @@
       min-height: 20vh;
       transition: all ease 1s;
       @include titleH5();
-      //font-size: 25px;
     }
   ;
 
@@ -41,7 +38,6 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      //border-radius: 10px;
       width: 50vh;
       height: 70vh;
       @include imageCenterProperty();
@@ -52,14 +48,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .text {
-    /*background-color: red;*/
-  }
-}
-
 .particles {
-  //position: fixed !important;
   top: 0;
   left: 0;
   bottom: 0;
