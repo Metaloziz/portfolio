@@ -18,7 +18,7 @@ export const Contacts: FC = (): ReactElement => {
     </div>
   ));
   return (
-    <div className={style.generalBlock}>
+    <div id="contacts" className={style.generalBlock}>
       <div className={style.container}>
         <Slider>
           <Title value="Contacts" size="h3" />
