@@ -25,7 +25,7 @@ export const projectItems: ProjectItemsType[] = [
     img: { backgroundImage: `url(${TO_DO_LIST})` },
     description:
       'Application for recording your tasks. Tasks are collected in sheets. Sheets can be edited (change the name, delete and create new ones). Tasks can be sorted by importance and also edited (change the name, delete and create new ones).',
-    url: 'https://metaloziz.github.io/todolist/#/',
+    url: 'https://metaloziz.github.io/todolist/',
   },
   {
     title: 'Social Network',
