@@ -6,8 +6,8 @@ const App: FC = (): ReactElement => ( // todo heroku fell. disable Form
   <div>
     <Header />
     <Preview />
-    <Skills />
     <Projects />
+    <Skills />
     {/* <Form /> */}
     <Contacts />
   </div>

@@ -9,11 +9,18 @@ import style from './Projects.module.scss';
 import { Title, Slider } from 'common';
 
 export const Projects = (): ReactElement => {
-  const projects = projectItems.map(({ title, img, description, url }) => (
+  const projects = projectItems.map(({ title, img, description, url, git }) => (
     <Fade key={title} triggerOnce>
-      <a href={url} target="_blank" rel="noreferrer">
-        <ProjectItem key={title} title={title} img={img} description={description} />
-      </a>
+      {/* <a href={url} target="_blank" rel="noreferrer"> */}
+      <ProjectItem
+        key={title}
+        url={url}
+        git={git}
+        title={title}
+        img={img}
+        description={description}
+      />
+      {/* </a> */}
     </Fade>
   ));
 

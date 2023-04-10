@@ -61,15 +61,26 @@
         transition: all ease .7s;
       }
 
-      button {
-        opacity: 0.0;
-        position: absolute;
-        transition: all ease .7s;
+      .buttons {
 
-        &:hover {
-          box-shadow: 0 0 30px 1px $shadowColor;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        button {
+          opacity: 0.0;
+
+          transition: all ease .7s;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: 0 0 30px 1px $shadowColor;
+          }
         }
       }
+
+
     }
 
     .description {
@@ -95,15 +106,19 @@
         }
       }
 
-      .description{
+      .description {
         filter: brightness(20%);
       }
 
-      button {
-        background-color: $primaryColor;
-        color: $titleColor;
-        opacity: 1;
+      .buttons {
+        button {
+          background-color: $primaryColor;
+          color: $titleColor;
+          opacity: 1;
+        }
       }
+
+
     }
   }
 
